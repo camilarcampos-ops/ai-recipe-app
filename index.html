@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="src/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/webp" href="images/favicon-crc.webp" />
+    <title>AI Recipes Generator</title>
+  </head>
+  <body>
+    <div class="container transbox">
+      <h1>Your Personal Recipe Generator 🥘</h1>
+      <p>
+        Just enter the ingredients you have at home and your personal AI chef
+        will create a recipe for you!
+      </p>
+      <main>
+        <div class="form-container">
+          <form id="recipe-form">
+            <input
+              type="text"
+              placeholder="Enter the ingredients"
+              required
+              autocomplete="off"
+              class="instructions"
+              id="user-instructions"
+            />
+            <input type="submit" class="submit-button" value="Generate" />
+          </form>
+          <div class="hint">
+            i.e: Cheeseburger with bacon, Chicken and Curry...
+          </div>
+        </div>
+        <div class="recipe hidden" id="recipe"></div>
+      </main>
+      <footer>
+        This AI project was coded by
+        <a href="https://github.com/camilarcampos-ops" target="_blank"
+          >Camila Rodrigues Campos</a
+        >
+        and is open-sourced on
+        <a href="https://github.com/camilarcampos-ops/ai-app" target="_blank"
+          >GitHub</a
+        >
+        and is hosted on
+        <a href="https://aigenerator-crc.netlify.app" target="_blank">Netlify</a
+        >.
+      </footer>
+    </div>
+    <script src="src/index.js"></script>
+  </body>
+</html>
